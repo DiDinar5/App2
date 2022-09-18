@@ -1,14 +1,21 @@
-﻿using System;
-
-class MainClass
+﻿class MainClass
 {
-    static void Main(string[] args)
+
+    public static void Main(string[] args)
     {
-        const string MyName = "Dinar";
-        Console.WriteLine(MyName);
-        Console.WriteLine("\n \t Мне 21 год");
-        Console.WriteLine("\n \t lol");
-        Console.WriteLine("\n \t Whats are you doing  \n Dinar");
-        Console.ReadKey();
+        {
+
+            string name = "Dinar";
+            byte age = 21;
+            bool HaveIApet=false;
+            double Size = 181;
+
+            Console.WriteLine("My name is"+name);
+            Console.WriteLine("My Age"+age);
+            Console.WriteLine("Do i have a pet"+HaveIApet);
+            Console.WriteLine("My size is"+Size);
+
+            
+        }
     }
 }
