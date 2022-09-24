@@ -1,21 +1,20 @@
-﻿class MainClass
-{
+﻿using System;
 
+class MainClass
+{
     public static void Main(string[] args)
     {
-        {
-
-            string name = "Dinar";
-            byte age = 21;
-            bool HaveIApet=false;
-            double Size = 181;
-
-            Console.WriteLine("My name is"+name);
-            Console.WriteLine("My Age"+age);
-            Console.WriteLine("Do i have a pet"+HaveIApet);
-            Console.WriteLine("My size is"+Size);
-
-            
-        }
+        Console.Write("Enter your name:");
+        string name = Console.ReadLine();
+        Console.Write("Enter your age:");
+        byte age=(byte) int.Parse(Console.ReadLine());
+        Console.WriteLine("Your name is {0} and age is {1}",name,age);
+        Console.Write("Enter your birthdate:");
+        string birthdate=Convert.ToString(Console.ReadLine());
+        Console.WriteLine("Your birthdate is {0}",birthdate);
+        Console.ReadKey();
     }
+
 }
+
+    
